@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HER Health Partners</string>
+    <string name="slogan">"Mental health is the new glow-up"</string>
+    <string name="logo_signup">"Mental health is the new glow-up"</string>
+    <string name="sing_in">"SIGN IN"</string>
+    <string name="sing_up">"SIGN UP"</string>
+    <string name="username">"Username"</string>
+    <string name="password">"Password"</string>
+    <string name="email">"Email"</string>
+    <string name="forgot_password">"Forgot your passsword?"</string>
+
+</resources>
