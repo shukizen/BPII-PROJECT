@@ -16,17 +16,19 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Tombol Kembali -->
+
+    <!-- Gambar dan Teks Header -->
+
     <ImageButton
         android:id="@+id/btn_back"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_margin="16dp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/back"
         android:contentDescription="Tombol Kembali"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <!-- Gambar dan Teks Header -->
 
     <ImageView
         android:id="@+id/header_icon"
