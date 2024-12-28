@@ -18,14 +18,12 @@ class SignUpActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        val btnSignIn: TextView = findViewById(R.id.button5)
 
-        val btnSignIn: TextView = findViewById(R.id.button5) // Inisialisasi TextView untuk sign-in
-
-        // Listener untuk kembali ke halaman sign-in
         btnSignIn.setOnClickListener {
-            val intentSignIn = Intent(this, LoginActivity::class.java)
-            startActivity(intentSignIn)
-            finish() // Optional: Menutup SignUpActivity agar tidak menumpuk di back stack
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+            finish() // Tutup SignUpActivity setelah berpindah ke LoginActivity
         }
     }
 }
