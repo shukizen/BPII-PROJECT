@@ -67,30 +67,36 @@
     </LinearLayout>
 
     <!-- Grid Tips -->
-    <GridLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
-        android:columnCount="2"
-        android:rowCount="3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_rectangle">
 
         <!-- Rectangle 1 -->
+
+        <!-- Rectangle 2 -->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/rectangle_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_margin="8dp"
-            android:orientation="vertical"
+            android:layout_marginTop="16dp"
             android:background="@drawable/bg_rectangle_rounded"
+            android:gravity="center"
+            android:orientation="vertical"
             android:padding="16dp"
-            android:gravity="center">
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/rectangle_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:src="@drawable/mental" />
 
             <TextView
@@ -98,122 +104,150 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Kelola Stres"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
-        <!-- Rectangle 2 -->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/rectangle_2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_margin="8dp"
-            android:orientation="vertical"
             android:background="@drawable/bg_rectangle_rounded"
+            android:gravity="center"
+            android:orientation="vertical"
             android:padding="16dp"
-            android:gravity="center">
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rectangle_1"
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_realistic_goals" />
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/image_25" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Tetapkan Tujuan"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <!-- Rectangle 3 -->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/rectangle_3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_margin="8dp"
-            android:orientation="vertical"
             android:background="@drawable/bg_rectangle_rounded"
+            android:gravity="center"
+            android:orientation="vertical"
             android:padding="16dp"
-            android:gravity="center">
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/rectangle_4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rectangle_1">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_professional_help" />
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/image_26" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Konsultasi Profesional"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <!-- Rectangle 4 -->
+
+        <!-- Rectangle 5 -->
+
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/rectangle_4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_margin="8dp"
-            android:orientation="vertical"
             android:background="@drawable/bg_rectangle_rounded"
+            android:gravity="center"
+            android:orientation="vertical"
             android:padding="16dp"
-            android:gravity="center">
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rectangle_3"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_2">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_exercise" />
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/olahraga" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Olahraga"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
-        <!-- Rectangle 5 -->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/rectangle_5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_margin="8dp"
-            android:orientation="vertical"
             android:background="@drawable/bg_rectangle_rounded"
+            android:gravity="center"
+            android:orientation="vertical"
             android:padding="16dp"
-            android:gravity="center">
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/rectangle_6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rectangle_3">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_open_up" />
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/terbuka" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Terbuka Pada Seseorang"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <!-- Rectangle 6 -->
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/rectangle_6"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:layout_margin="8dp"
-            android:orientation="vertical"
             android:background="@drawable/bg_rectangle_rounded"
+            android:gravity="center"
+            android:orientation="vertical"
             android:padding="16dp"
-            android:gravity="center">
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/rectangle_5"
+            app:layout_constraintTop_toBottomOf="@+id/rectangle_4">
 
             <ImageView
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:src="@drawable/ic_sleep" />
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/sleep" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Tidur Tepat Waktu"
-                android:textSize="14sp" />
+                android:textSize="18sp" />
         </LinearLayout>
-    </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
