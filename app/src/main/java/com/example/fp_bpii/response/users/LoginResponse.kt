@@ -5,5 +5,5 @@ import android.os.Message
 data class LoginResponse(
     val success : Boolean,
     val message: String,
-    val data : Data
+    val `data`: Data
 )
