@@ -12,7 +12,7 @@ import com.example.fp_bpii.response.users.LoginResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import android.util.Log // Import Log
+import android.util.Log
 
 class LoginActivity : AppCompatActivity() {
 
@@ -30,26 +30,29 @@ class LoginActivity : AppCompatActivity() {
             val pwd = txtPassword.text.toString().trim()
 
             if (user.isEmpty()) {
-                txtUsername.error = "Username required"
+                txtUsername.error = "Username dibutuhkan"
                 txtUsername.requestFocus()
                 return@setOnClickListener
             }
 
             if (pwd.isEmpty()) {
-                txtPassword.error = "Password required"
+                txtPassword.error = "Password dibutuhkan"
                 txtPassword.requestFocus()
                 return@setOnClickListener
             }
 
-            RetrofitClient.instance.postLogin(user, pwd).enqueue(object : Callback<LoginResponse> {
+            // Sekarang, postLogin mengembalikan Call<LoginResponse>
+            val call: Call<LoginResponse> = RetrofitClient.instance.postLogin(user, pwd)
+
+            call.enqueue(object : Callback<LoginResponse> {
                 override fun onResponse(
                     call: Call<LoginResponse>,
                     response: Response<LoginResponse>
                 ) {
-                    Log.d("LoginActivity", "Response code: ${response.code()}") // Log response code
+                    Log.d("LoginActivity", "Kode respons: ${response.code()}")
                     if (response.isSuccessful) {
                         val account = response.body()
-                        Log.d("LoginActivity", "Response body: $account") // Log response body
+                        Log.d("LoginActivity", "Isi respons: $account")
                         if (account?.success == true) {
                             Toast.makeText(
                                 this@LoginActivity,
@@ -61,7 +64,7 @@ class LoginActivity : AppCompatActivity() {
                         } else {
                             Toast.makeText(
                                 this@LoginActivity,
-                                account?.message ?: "Login failed",
+                                account?.message ?: "Login gagal",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
@@ -71,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
-                    Log.e("LoginActivity", "API call failed", t) // Log error
+                    Log.e("LoginActivity", "Panggilan API gagal", t)
                     Toast.makeText(applicationContext, t.message, Toast.LENGTH_SHORT).show()
                 }
             })
