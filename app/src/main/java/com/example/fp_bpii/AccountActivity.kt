@@ -14,10 +14,10 @@ class AccountActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_account)
-        val txtName: EditText = findViewById(R.id.nama_input)
-        val txtAge: TextView= findViewById(R.id.age)
-        val txtEmail: EditText = findViewById(R.id.email_input)
-        val txtGender: Spinner = findViewById(R.id.gender_spinner)
+//        val txtName: EditText = findViewById(R.id.nama_input)
+//        val txtAge: TextView= findViewById(R.id.age)
+//        val txtEmail: EditText = findViewById(R.id.email_input)
+//        val txtGender: Spinner = findViewById(R.id.gender_spinner)
 
 
 

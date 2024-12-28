@@ -1,6 +1,8 @@
 package com.example.fp_bpii
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +18,13 @@ class TipsActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val btnBack : ImageButton = findViewById(R.id.btn_back)
+
+        btnBack.setOnClickListener {
+            val intent = Intent(this, HomeActivity2::class.java)
+            startActivity(intent)
+        }
+
     }
 }

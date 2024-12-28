@@ -158,21 +158,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
+        android:id="@+id/Mental"
         android:layout_width="370dp"
         android:layout_height="115dp"
         android:layout_marginStart="25dp"
+        android:layout_marginTop="320dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="472dp"
         android:background="@drawable/card_background"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageIcon"
@@ -194,6 +193,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/Tips"
         android:layout_width="370dp"
         android:layout_height="115dp"
         android:layout_marginStart="25dp"
@@ -207,7 +207,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585">
+        app:layout_constraintVertical_bias="0.601">
 
         <TextView
             android:id="@+id/textTitle1"
@@ -225,7 +225,6 @@
             android:layout_height="68dp"
             android:contentDescription="Icon"
             android:src="@drawable/lampu" />
-
 
 
     </LinearLayout>

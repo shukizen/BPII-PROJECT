@@ -23,7 +23,6 @@ class SignUpActivity : AppCompatActivity() {
         btnSignIn.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
-            finish() // Tutup SignUpActivity setelah berpindah ke LoginActivity
         }
     }
 }
