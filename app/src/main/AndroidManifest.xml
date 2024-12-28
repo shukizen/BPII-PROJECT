@@ -17,6 +17,12 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".DepresiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaStresActivity"
+            android:exported="false" />
+        <activity
             android:name=".TipsActivity"
             android:exported="false" />
         <activity
