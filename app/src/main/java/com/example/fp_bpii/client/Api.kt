@@ -10,13 +10,12 @@ import retrofit2.http.POST
 
 interface Api {
     @GET("psikiater")
-    fun getPsikiater() : Call<ArrayList<PsikiaterResponse>>
+    fun getPsikiater(): Call<ArrayList<PsikiaterResponse>>
+
     @FormUrlEncoded
     @POST("login")
     fun login(
-        @Field("email") email: String,
-        @Field("password") password: String
+        @Field("username") username: String,
+        @Field("password") password: String,
     ): Call<LoginResponse>
-
-    abstract fun postLogin(user: String, pwd: String): Any
 }
