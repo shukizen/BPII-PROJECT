@@ -6,8 +6,10 @@
     <color name="pink">#E592B8</color>
     <color name="light_green">#B6E4C9</color>
     <color name="light_blue">#A6DCEF</color>
+    <color name="Dark_blue">#5899D1</color>
     <color name="abu_abu">#F2F2F2</color>
     <color name="kuning">#E4F437</color>
     <color name="oren">#F48F37</color>
+    <color name="tranparent">#00000000</color>
 
 </resources>
