@@ -7,183 +7,183 @@
     android:background="@color/abu_abu"
     android:padding="16dp">
 
-    <!-- Back Button -->
+<!--    &lt;!&ndash; Back Button &ndash;&gt;-->
 
-    <!-- Title -->
+<!--    &lt;!&ndash; Title &ndash;&gt;-->
 
-    <!-- FAQ Button -->
+<!--    &lt;!&ndash; FAQ Button &ndash;&gt;-->
 
-    <ImageView
-        android:id="@+id/back_button"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:contentDescription="Back"
-        android:src="@drawable/baseline_arrow_back_24"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="35dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/back_button"-->
+<!--        android:layout_width="24dp"-->
+<!--        android:layout_height="24dp"-->
+<!--        android:contentDescription="Back"-->
+<!--        android:src="@drawable/baseline_arrow_back_24"-->
+<!--        tools:layout_editor_absoluteX="16dp"-->
+<!--        tools:layout_editor_absoluteY="35dp" />-->
 
-    <!-- Profile Picture -->
+<!--    &lt;!&ndash; Profile Picture &ndash;&gt;-->
 
-    <!-- Edit Button -->
+<!--    &lt;!&ndash; Edit Button &ndash;&gt;-->
 
-    <!-- Name -->
+<!--    &lt;!&ndash; Name &ndash;&gt;-->
 
-    <!-- Age -->
-    <ImageView
-        android:id="@+id/profile_picture"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@color/black"
-        android:contentDescription="Profile Picture"
-        android:src="@drawable/boy"
-        tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="77dp" />
+<!--    &lt;!&ndash; Age &ndash;&gt;-->
+<!--    <ImageView-->
+<!--        android:id="@+id/profile_picture"-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="@color/black"-->
+<!--        android:contentDescription="Profile Picture"-->
+<!--        android:src="@drawable/boy"-->
+<!--        tools:layout_editor_absoluteX="85dp"-->
+<!--        tools:layout_editor_absoluteY="77dp" />-->
 
-    <ImageView
-        android:id="@+id/edit_button"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:contentDescription="Edit Profile"
-        android:src="@drawable/baseline_edit_24"
-        tools:layout_editor_absoluteX="145dp"
-        tools:layout_editor_absoluteY="138dp" />
+<!--    <ImageView-->
+<!--        android:id="@+id/edit_button"-->
+<!--        android:layout_width="24dp"-->
+<!--        android:layout_height="24dp"-->
+<!--        android:contentDescription="Edit Profile"-->
+<!--        android:src="@drawable/baseline_edit_24"-->
+<!--        tools:layout_editor_absoluteX="145dp"-->
+<!--        tools:layout_editor_absoluteY="138dp" />-->
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Aulia"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="233dp"
-        tools:layout_editor_absoluteY="80dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/name"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Aulia"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        tools:layout_editor_absoluteX="233dp"-->
+<!--        tools:layout_editor_absoluteY="80dp" />-->
 
-    <!-- Logout Button -->
+<!--    &lt;!&ndash; Logout Button &ndash;&gt;-->
 
-    <!-- Nama Section -->
+<!--    &lt;!&ndash; Nama Section &ndash;&gt;-->
 
-    <TextView
-        android:id="@+id/age"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="23 Tahun"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="222dp"
-        tools:layout_editor_absoluteY="113dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/age"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="23 Tahun"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="14sp"-->
+<!--        tools:layout_editor_absoluteX="222dp"-->
+<!--        tools:layout_editor_absoluteY="113dp" />-->
 
-    <Button
-        android:id="@+id/logout_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/black"
-        android:text="Log out"
-        android:textColor="#FFFFFF"
-        android:textSize="14sp"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="138dp" />
+<!--    <Button-->
+<!--        android:id="@+id/logout_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/black"-->
+<!--        android:text="Log out"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="14sp"-->
+<!--        tools:layout_editor_absoluteX="206dp"-->
+<!--        tools:layout_editor_absoluteY="138dp" />-->
 
-    <!-- Email Section -->
+<!--    &lt;!&ndash; Email Section &ndash;&gt;-->
 
-    <EditText
-        android:id="@+id/nama_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Aulia Rhasad"
-        android:padding="12dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#CCCCCC"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="223dp" />
+<!--    <EditText-->
+<!--        android:id="@+id/nama_input"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/edittext_background"-->
+<!--        android:hint="Aulia Rhasad"-->
+<!--        android:padding="12dp"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textColorHint="#CCCCCC"-->
+<!--        tools:layout_editor_absoluteX="23dp"-->
+<!--        tools:layout_editor_absoluteY="223dp" />-->
 
-    <TextView
-        android:id="@+id/nama_label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Nama"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="23dp"
-        tools:layout_editor_absoluteY="204dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/nama_label"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Nama"-->
+<!--        android:textColor="@color/black"-->
+<!--        tools:layout_editor_absoluteX="23dp"-->
+<!--        tools:layout_editor_absoluteY="204dp" />-->
 
-    <TextView
-        android:id="@+id/faq_button"
-        android:layout_width="24dp"
-        android:layout_height="match_parent"
-        android:contentDescription="FAQ"
-        android:text="FAQ"
-        tools:layout_editor_absoluteX="394dp"
-        tools:layout_editor_absoluteY="-18dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/faq_button"-->
+<!--        android:layout_width="24dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:contentDescription="FAQ"-->
+<!--        android:text="FAQ"-->
+<!--        tools:layout_editor_absoluteX="394dp"-->
+<!--        tools:layout_editor_absoluteY="-18dp" />-->
 
-    <!-- Gender Section -->
-    <EditText
-        android:id="@+id/email_input"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:hint="Rashadi@gamit.com"
-        android:padding="12dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#CCCCCC"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="304dp" />
+<!--    &lt;!&ndash; Gender Section &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/email_input"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/edittext_background"-->
+<!--        android:hint="Rashadi@gamit.com"-->
+<!--        android:padding="12dp"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textColorHint="#CCCCCC"-->
+<!--        tools:layout_editor_absoluteX="16dp"-->
+<!--        tools:layout_editor_absoluteY="304dp" />-->
 
-    <TextView
-        android:id="@+id/email_label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Email"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="284dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/email_label"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Email"-->
+<!--        android:textColor="@color/black"-->
+<!--        tools:layout_editor_absoluteX="16dp"-->
+<!--        tools:layout_editor_absoluteY="284dp" />-->
 
-    <!-- Quote of the Day -->
+<!--    &lt;!&ndash; Quote of the Day &ndash;&gt;-->
 
-    <Spinner
-        android:id="@+id/gender_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/edittext_background"
-        android:padding="12dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="398dp" />
+<!--    <Spinner-->
+<!--        android:id="@+id/gender_spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/edittext_background"-->
+<!--        android:padding="12dp"-->
+<!--        tools:layout_editor_absoluteX="16dp"-->
+<!--        tools:layout_editor_absoluteY="398dp" />-->
 
-    <TextView
-        android:id="@+id/gender_label"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Jenis Kelamin"
-        android:textColor="@color/black"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="367dp" />
+<!--    <TextView-->
+<!--        android:id="@+id/gender_label"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Jenis Kelamin"-->
+<!--        android:textColor="@color/black"-->
+<!--        tools:layout_editor_absoluteX="16dp"-->
+<!--        tools:layout_editor_absoluteY="367dp" />-->
 
-    <LinearLayout
-        android:id="@+id/quote_container"
-        android:layout_width="389dp"
-        android:layout_height="260dp"
-        android:background="@drawable/edittext_background"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="-4dp"
-        tools:layout_editor_absoluteY="460dp">
+<!--    <LinearLayout-->
+<!--        android:id="@+id/quote_container"-->
+<!--        android:layout_width="389dp"-->
+<!--        android:layout_height="260dp"-->
+<!--        android:background="@drawable/edittext_background"-->
+<!--        android:padding="16dp"-->
+<!--        tools:layout_editor_absoluteX="-4dp"-->
+<!--        tools:layout_editor_absoluteY="460dp">-->
 
-        <TextView
-            android:id="@+id/quote_title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="8dp"
-            android:text="Quote of the day"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+<!--        <TextView-->
+<!--            android:id="@+id/quote_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:paddingBottom="8dp"-->
+<!--            android:text="Quote of the day"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold" />-->
 
-        <TextView
-            android:id="@+id/quote_text"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ambillah jatah nasi sejumlah dua sesuai anjuran dari Pak Vinsen."
-            android:textColor="@color/black"
-            android:textSize="14sp" />
+<!--        <TextView-->
+<!--            android:id="@+id/quote_text"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Ambillah jatah nasi sejumlah dua sesuai anjuran dari Pak Vinsen."-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="14sp" />-->
 
-    </LinearLayout>
+<!--    </LinearLayout>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

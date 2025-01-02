@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     tools:context=".KelolaStresActivity">
 
     <!-- Header Rectangle (Blue) -->
@@ -19,8 +20,8 @@
     <!-- Back Button -->
     <ImageButton
         android:id="@+id/btn_back"
-        android:layout_width="46dp"
-        android:layout_height="46dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/back"
