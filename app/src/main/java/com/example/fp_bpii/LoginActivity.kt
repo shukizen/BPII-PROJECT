@@ -1,5 +1,4 @@
 package com.example.fp_bpii
-
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -8,7 +7,6 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-
 import com.example.fp_bpii.client.RetrofitClient
 import com.example.fp_bpii.response.users.LoginResponse
 import retrofit2.Call
@@ -16,10 +14,13 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class LoginActivity : AppCompatActivity() {
+    private lateinit var sharedPreferencesManager: SharedPreferencesUser
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        sharedPreferencesManager = SharedPreferencesUser(this)
 
         val txtUsername: EditText = findViewById(R.id.editTextText)
         val txtPassword: EditText = findViewById(R.id.editTextText2)
@@ -53,7 +54,11 @@ class LoginActivity : AppCompatActivity() {
                     if (response.isSuccessful) {
                         if (account?.success == true) {
                             Toast.makeText(this@LoginActivity, account.message.toString(), Toast.LENGTH_SHORT).show()
-                            val intentLogin = Intent(this@LoginActivity, HomeActivity2::class.java)
+
+                            // Simpan status login ke SharedPreferences
+                            sharedPreferencesManager.saveUser(user, true)
+
+                            val intentLogin = Intent(this@LoginActivity, HomeActivity::class.java)
                             startActivity(intentLogin)
                         } else {
                             Log.d("LoginActivity", "Login failed: ${account?.message}")

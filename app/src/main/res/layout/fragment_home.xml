@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/abu_abu"
-    tools:context=".HomeActivity">
+    tools:context=".HomeFragment">
 
     <TextView
         android:id="@+id/textView3"
@@ -150,7 +150,7 @@
         android:ems="10"
         android:inputType="text"
         android:paddingStart="10dp"
-        android:text="Cari disini"
+        android:hint="Cari disini"
         app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.543"
@@ -162,21 +162,21 @@
         android:layout_width="370dp"
         android:layout_height="115dp"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="304dp"
         android:layout_marginEnd="16dp"
         android:background="@drawable/card_background"
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/imageIcon"
-            android:layout_width="102dp"
-            android:layout_height="68dp"
+            android:layout_width="112dp"
+            android:layout_height="74dp"
             android:contentDescription="Icon"
             android:src="@drawable/mental_health" />
 
@@ -207,13 +207,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.601">
+        app:layout_constraintVertical_bias="0.568">
 
         <TextView
             android:id="@+id/textTitle1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="70dp"
+            android:layout_weight="1"
             android:text="Tips Kesehatan \nMental Harian"
             android:textColor="#000000"
             android:textSize="16sp"
@@ -221,11 +222,10 @@
 
         <ImageView
             android:id="@+id/imageIcon1"
-            android:layout_width="102dp"
-            android:layout_height="68dp"
+            android:layout_width="94dp"
+            android:layout_height="74dp"
             android:contentDescription="Icon"
             android:src="@drawable/lampu" />
-
 
     </LinearLayout>
 
@@ -243,7 +243,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844">
+        app:layout_constraintVertical_bias="0.827">
 
         <ImageView
             android:id="@+id/imageIcon2"
@@ -277,10 +277,10 @@
         android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintHorizontal_bias="0.97"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.843">
+        app:layout_constraintVertical_bias="0.827">
 
         <ImageView
             android:id="@+id/imageIcon3"
