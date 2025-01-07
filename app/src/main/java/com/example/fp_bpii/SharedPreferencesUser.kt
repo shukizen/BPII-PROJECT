@@ -66,6 +66,10 @@ class SharedPreferencesUser(context: Context) {
     fun clearUserData() {
         sharedPreferences.edit().clear().apply()
     }
+
+    fun logout() {
+        sharedPreferences.edit().putBoolean(KEY_IS_LOGGED_IN, false).apply()
+    }
 }
 
 

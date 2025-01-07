@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -38,6 +39,14 @@ class ProfileFragment : Fragment() {
         val userEmail = sharedPreferencesUser.getUserEmail()
         val txtemail: TextView = view.findViewById(R.id.email)
         txtemail.text = "$userEmail"
+
+        val btnLogout: Button = view.findViewById(R.id.button19)
+        btnLogout.setOnClickListener {
+            sharedPreferencesUser.logout()
+            val intent = Intent(requireContext(), LoginActivity::class.java)
+            startActivity(intent)
+            requireActivity().finish()
+        }
 
         return view
 

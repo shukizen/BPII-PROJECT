@@ -54,7 +54,7 @@
         android:layout_height="18dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="116dp"
-        android:src="@drawable/baseline_person_24"
+        android:src="@drawable/sip"
         app:layout_constraintStart_toEndOf="@+id/imageViewProfile1"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -64,7 +64,7 @@
         android:layout_height="16dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="116dp"
-        android:src="@drawable/ic_send"
+        android:src="@drawable/bintang"
         app:layout_constraintStart_toEndOf="@+id/textViewRating1"
         app:layout_constraintTop_toTopOf="parent" />
 
