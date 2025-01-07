@@ -1,0 +1,187 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Header View -->
+    <View
+        android:id="@+id/header_card"
+        android:layout_width="414dp"
+        android:layout_height="224dp"
+        android:background="@drawable/card_background4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Back Button -->
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/back"
+        android:contentDescription="Back Button"
+        app:layout_constraintStart_toStartOf="@+id/header_card"
+        app:layout_constraintTop_toTopOf="@+id/header_card" />
+
+    <!-- Icon Clock -->
+    <ImageView
+        android:id="@+id/icon_clock"
+        android:layout_width="120dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/clock"
+        app:layout_constraintTop_toTopOf="@+id/header_card"
+        app:layout_constraintStart_toStartOf="@+id/header_card"
+        app:layout_constraintEnd_toEndOf="@+id/header_card"
+        app:layout_constraintHorizontal_bias="0.21" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="168dp"
+        android:text="Pengingat Harian"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/current_month"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon_clock"
+        app:layout_constraintHorizontal_bias="0.222" />
+
+    <!-- Subtitle -->
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Buat Hari mu menjadi \nkesempatan baru,mulailah \ndengan niat yang baik."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon_clock"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintHorizontal_bias="0.719" />
+
+    <!-- Calendar Title -->
+    <TextView
+        android:id="@+id/calendar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KALENDER"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/current_month"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintMarginStart="16dp" />
+
+    <!-- Current Month -->
+    <TextView
+        android:id="@+id/current_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:text="Oktober 2024"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/recyclerView"
+        app:layout_constraintStart_toStartOf="@+id/subtitle" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="408dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintTop_toBottomOf="@+id/header_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:listitem="@layout/calender" />
+
+    <!-- Time Label -->
+    <TextView
+        android:id="@+id/time_label"
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="76dp"
+        android:text="7:00 \n AM"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <!-- Circle View -->
+    <ImageView
+        android:layout_width="133dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/circle_view"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintStart_toEndOf="@+id/time_label"
+        app:layout_constraintEnd_toStartOf="@+id/morning_label"
+        app:layout_constraintHorizontal_bias="0.589" />
+
+    <!-- Morning Label -->
+
+    <ImageView
+        android:layout_width="87dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/jam"
+        app:layout_constraintEnd_toStartOf="@+id/morning_label"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toEndOf="@+id/time_label"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <TextView
+        android:id="@+id/morning_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="16dp"
+        android:text="Morning"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <!-- Create Activity Button -->
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="208dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="144dp"
+        android:backgroundTint="@color/biru"
+        android:text="Buat Kegiatan Harian"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_label" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="208dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/card_background13"
+        android:text=" Kegiatan Harian"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/time_label" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

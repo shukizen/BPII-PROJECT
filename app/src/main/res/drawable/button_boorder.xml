@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#7CF5FF"/> <!-- Warna latar belakang button -->
+    <stroke android:color="#000000" android:width="2dp"/> <!-- Garis hitam di pinggir -->
+    <corners android:radius="8dp"/> <!-- Sudut button yang melengkung -->
+</shape>

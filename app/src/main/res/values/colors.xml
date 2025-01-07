@@ -11,5 +11,18 @@
     <color name="kuning">#E4F437</color>
     <color name="oren">#F48F37</color>
     <color name="tranparent">#00000000</color>
+    <color name="black_green">#39BF8B</color>
+    <color name="biru">#7CF5FF</color>
+
+    <color name="abu">#D9D9D9</color>
+    <color name="yellow_header">#DFFF00</color>
+    <color name="orange">#FFA726</color>
+    <color name="teal">#4CAF50</color>
+    <color name="tosca">#4AF6C5</color>
+    <color name="pink2">#FF7D97</color>
+
+
+    <color name="blue">#2196F3</color>
+
 
 </resources>
