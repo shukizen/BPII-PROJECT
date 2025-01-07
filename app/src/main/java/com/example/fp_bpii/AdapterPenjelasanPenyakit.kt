@@ -24,7 +24,7 @@ class AdapterPenjelasanPenyakit(
         fun bind(penyakit: Penyakit) {
             jenisPenyakit.text = penyakit.jenis_penyakit
 
-            val imageUrl = "http://10.200.121.41/rest_apibp2/penyakit/${penyakit.gambar}"
+            val imageUrl = "http://192.168.0.108/rest_apibp2/penyakit/${penyakit.gambar}"
             Picasso.get()
                 .load(imageUrl)
                 .placeholder(android.R.drawable.ic_menu_gallery)

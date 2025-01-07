@@ -9,15 +9,6 @@
     tools:context=".MainActivity">
 
 
-    <View
-        android:id="@+id/headerView"
-        android:layout_width="402dp"
-        android:layout_height="184dp"
-        android:background="@drawable/bg_green_rounded"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="211dp"

@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/tosca" /> <!-- Warna Pink -->
+    <corners android:radius="16dp" /> <!-- Sudut Membulat -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" /> <!-- Garis hitam -->
+</shape>

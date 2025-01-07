@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:background="@color/white"
-    tools:context="TambahKegiatanActivity">
+    tools:context=".TambahKegiatanActivity">
 
     <ImageView
         android:id="@+id/iv_back"
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="35dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="36dp"
         android:contentDescription="Back"
         android:src="@drawable/back"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,8 +30,6 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_back" />
 
@@ -45,8 +43,6 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -60,8 +56,6 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_nama_kegiatan" />
 
@@ -75,8 +69,6 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_tanggal" />
 
@@ -90,8 +82,6 @@
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sp_jenis_kegiatan" />
 
@@ -113,9 +103,6 @@
         android:textColorHint="#999999"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.324"
-        app:layout_constraintMarginEnd="16dp"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_title" />
 
@@ -129,9 +116,6 @@
         android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.324"
-        app:layout_constraintMarginEnd="16dp"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/et_nama_kegiatan" />
 
@@ -146,9 +130,6 @@
         android:textColor="#000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintMarginEnd="16dp"
-        app:layout_constraintMarginStart="16dp"
-        app:layout_constraintMarginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_pengingat" />
 

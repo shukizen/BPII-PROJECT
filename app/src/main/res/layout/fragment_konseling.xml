@@ -1,0 +1,527 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FFFFFF"
+    tools:context=".KonselingFragment">
+
+    <!-- Header View -->
+    <View
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:background="@drawable/bg_yellow_rounded"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Judul Utama -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Rekomendasi Psikolog Buat Kamu"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/headerView" />
+    <TextView
+        android:id="@+id/textViewSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:text="Kami telah menemukan psikolog yang cocok dengan kepribadianmu"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        android:textStyle="bold"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle">
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="371dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card_background4"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle">
+
+        <!-- Gambar Profil -->
+
+        <!-- Nama dan Spesialisasi -->
+        <ImageView
+            android:id="@+id/imageViewProfile1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/doctor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewName1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Zubaidah Watullo M.Psi"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfile1"
+            app:layout_constraintTop_toTopOf="@+id/imageViewProfile1" />
+
+        <TextView
+            android:id="@+id/textViewSpecialty1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Psikolog Perkerjaan dan Karir, Trauma"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfile1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName1" />
+
+        <!-- Garis Pemisah -->
+
+        <!-- Rating dan Pengalaman -->
+
+        <!-- Waktu Konsultasi -->
+
+        <View
+            android:id="@+id/viewLine1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProfile1" />
+
+        <ImageView
+            android:id="@+id/imageViewThumbUp1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/baseline_person_24"
+            app:layout_constraintEnd_toStartOf="@+id/textViewRating1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty1"
+            />
+
+        <TextView
+            android:id="@+id/textViewRating1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="8dp"
+            android:text="85%"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewExperience1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty1" />
+
+        <ImageView
+            android:id="@+id/imageViewExperience1"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_send"
+            app:layout_constraintEnd_toStartOf="@+id/textViewExperience1"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty1" />
+
+        <TextView
+            android:id="@+id/textViewExperience1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="154dp"
+            android:text="4 thn"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty1" />
+
+        <TextView
+            android:id="@+id/textViewConsultation1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="148dp"
+            android:text="Konsultasi"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/buttonClickHere1"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine1" />
+
+        <TextView
+            android:id="@+id/textViewConsultationTime1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senin 09.00-12.30"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConsultation1" />
+
+        <!-- Tombol Klik -->
+        <Button
+            android:id="@+id/buttonClickHere1"
+            android:layout_width="107dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@android:color/black"
+            android:text="Klik disini"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewConsultationTime1"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine1"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="371dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card_background7"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle">
+
+        <!-- Gambar Profil -->
+
+        <!-- Nama dan Spesialisasi -->
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/doctor3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Alex Manuqueta M.Psi"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
+            app:layout_constraintTop_toTopOf="@+id/imageViewProfile" />
+
+        <TextView
+            android:id="@+id/textViewSpecialty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Psikologi Gangguan Kecemasan"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+        <!-- Garis Pemisah -->
+
+        <!-- Rating dan Pengalaman -->
+
+        <!-- Waktu Konsultasi -->
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProfile" />
+
+        <ImageView
+            android:id="@+id/imageViewThumbUp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/baseline_person_24"
+            app:layout_constraintEnd_toStartOf="@+id/textViewRating"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty" />
+
+        <TextView
+            android:id="@+id/textViewRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:text="85%"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewExperience"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty" />
+
+        <ImageView
+            android:id="@+id/imageViewExperience"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_send"
+            app:layout_constraintEnd_toStartOf="@+id/textViewExperience"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty" />
+
+        <TextView
+            android:id="@+id/textViewExperience"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="154dp"
+            android:text="4 thn"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty" />
+
+        <TextView
+            android:id="@+id/textViewConsultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="156dp"
+            android:text="Konsultasi"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/buttonClickHere"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+
+        <TextView
+            android:id="@+id/textViewConsultationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumat 08.00-11.00"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConsultation" />
+
+        <!-- Tombol Klik -->
+        <Button
+            android:id="@+id/buttonClickHere"
+            android:layout_width="107dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@android:color/black"
+            android:text="Klik disini"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewConsultationTime"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="371dp"
+        android:layout_height="154dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="224dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/card_background6"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSubtitle">
+
+        <!-- Gambar Profil -->
+
+        <!-- Nama dan Spesialisasi -->
+        <ImageView
+            android:id="@+id/imageViewProfile2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:contentDescription="Profile Image"
+            android:src="@drawable/doctor2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewName2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Kiky Syaputri M.Psi"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfile2"
+            app:layout_constraintTop_toTopOf="@+id/imageViewProfile2" />
+
+        <TextView
+            android:id="@+id/textViewSpecialty2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Psikolog Perkerjaan dan Karir, Trauma"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfile2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewName2" />
+
+        <!-- Garis Pemisah -->
+
+        <!-- Rating dan Pengalaman -->
+
+        <!-- Waktu Konsultasi -->
+
+        <View
+            android:id="@+id/viewLine2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="28dp"
+            android:background="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProfile2" />
+
+        <ImageView
+            android:id="@+id/imageViewThumbUp2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/baseline_person_24"
+            app:layout_constraintEnd_toStartOf="@+id/textViewRating2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty2" />
+
+        <TextView
+            android:id="@+id/textViewRating2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="6dp"
+            android:text="85%"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/imageViewExperience2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty2" />
+
+        <ImageView
+            android:id="@+id/imageViewExperience2"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="4dp"
+            android:src="@drawable/ic_send"
+            app:layout_constraintEnd_toStartOf="@+id/textViewExperience2"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty2" />
+
+        <TextView
+            android:id="@+id/textViewExperience2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="154dp"
+            android:text="4 thn"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewSpecialty2" />
+
+        <TextView
+            android:id="@+id/textViewConsultation2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="148dp"
+            android:text="Konsultasi"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/buttonClickHere2"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine2" />
+
+        <TextView
+            android:id="@+id/textViewConsultationTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rabu 13.00-15.30"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewConsultation2" />
+
+        <!-- Tombol Klik -->
+        <Button
+            android:id="@+id/buttonClickHere2"
+            android:layout_width="107dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@android:color/black"
+            android:text="Klik disini"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textViewConsultationTime2"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine2"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

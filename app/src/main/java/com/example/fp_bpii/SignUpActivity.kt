@@ -17,12 +17,14 @@ import retrofit2.Response
 
 class SignUpActivity : AppCompatActivity() {
 
-    // Tag untuk log
+    private lateinit var sharedPreferencesManager: SharedPreferencesUser
     private val TAG = "SignUpActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+
+        sharedPreferencesManager = SharedPreferencesUser(this)
 
         val btnRegister: Button = findViewById(R.id.button7)
         val txtEmail: EditText = findViewById(R.id.editTextText3)
@@ -83,10 +85,16 @@ class SignUpActivity : AppCompatActivity() {
                         val registerResponse = response.body()
                         Log.d("SignUpActivity", "Sukses: ${registerResponse?.message}")
                         Toast.makeText(
+
                             this@SignUpActivity,
                             "Registrasi berhasil: ${registerResponse?.message}",
                             Toast.LENGTH_SHORT
                         ).show()
+
+                        sharedPreferencesManager.saveEmail(email, true)
+                        sharedPreferencesManager.saveUser(username, true)
+                        sharedPreferencesManager.savePwd(password, true)
+
                     } else {
                         // Log detail error
                         val errorBody = response.errorBody()?.string()

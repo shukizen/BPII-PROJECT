@@ -27,7 +27,7 @@ class AdapterPenjelasanTips(
             deskripsiTips.text = tip.penjelasan
 
             // Memuat gambar menggunakan Picasso
-            val imageUrl = "http://10.200.121.41/rest_apibp2/gambar/${tip.gambar}"
+            val imageUrl = "http://192.168.0.108/rest_apibp2/gambar/${tip.gambar}"
             Picasso.get()
                 .load(imageUrl)
                 .placeholder(android.R.drawable.ic_menu_gallery)

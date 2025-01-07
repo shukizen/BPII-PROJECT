@@ -8,8 +8,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 
 class HomeFragment : Fragment() {
     private lateinit var sharedPreferencesUser: SharedPreferencesUser
@@ -31,9 +33,28 @@ class HomeFragment : Fragment() {
         val txtWelcome: TextView = view.findViewById(R.id.textView3)
         txtWelcome.text = "Hallo, $userName"
 
+
+        val popup: ImageView = view.findViewById(R.id.popupsmile)
+        popup.setOnClickListener{
+            val intent = Intent(requireContext(), PopupActivity::class.java)
+            startActivity(intent)
+        }
+
         val tips: LinearLayout = view.findViewById(R.id.Tips)
         tips.setOnClickListener{
             val intent = Intent(requireContext(), TipsActivity::class.java)
+            startActivity(intent)
+        }
+
+        val chatbot: LinearLayout = view.findViewById(R.id.chatbot)
+        chatbot.setOnClickListener{
+            val intent = Intent(requireContext(), ChatActivity::class.java)
+            startActivity(intent)
+        }
+
+        val pengingat: LinearLayout = view.findViewById(R.id.pengingatharian)
+        pengingat.setOnClickListener{
+            val intent = Intent(requireContext(), PengingatHarianActivity::class.java)
             startActivity(intent)
         }
 
@@ -42,6 +63,7 @@ class HomeFragment : Fragment() {
             val intent = Intent(requireContext(), PenyakitActivity::class.java)
             startActivity(intent)
         }
+
 
         return view
     }

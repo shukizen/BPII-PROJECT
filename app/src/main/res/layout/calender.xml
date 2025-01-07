@@ -13,94 +13,84 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="76dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/card_background13"
+                android:gravity="center"
+                android:text="Selasa  \n 18"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <!-- Baris Nama Hari -->
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="148dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/card_background13"
+                android:gravity="center"
+                android:text="Senin  \n 17"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="296dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/card_background13"
+                android:gravity="center"
+                android:text="Senin  \n 17"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        </LinearLayout>
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/card_background13"
+                android:gravity="center"
+                android:text="Senin  \n 17"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/card_background13"
+                android:gravity="center"
+                android:text="Senin  \n 17"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="70dp"
+                android:layout_columnWeight="1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="84dp"
+                android:background="@drawable/card_background13"
+                android:gravity="center"
+                android:text="Senin  \n 17"
+                android:textStyle="bold" />
+
     </ScrollView>
 
-    <TextView
-        android:layout_width="64dp"
-        android:layout_height="70dp"
-        android:layout_columnWeight="1"
-        android:layout_marginStart="372dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/card_background13"
-        android:gravity="center"
-        android:text="Senin  \n 17"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="64dp"
-        android:layout_height="70dp"
-        android:layout_columnWeight="1"
-        android:layout_marginStart="76dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/card_background13"
-        android:gravity="center"
-        android:text="Selasa  \n 18"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="64dp"
-        android:layout_height="70dp"
-        android:layout_columnWeight="1"
-        android:layout_marginStart="148dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/card_background13"
-        android:gravity="center"
-        android:text="Senin  \n 17"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="64dp"
-        android:layout_height="70dp"
-        android:layout_columnWeight="1"
-        android:layout_marginStart="296dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/card_background13"
-        android:gravity="center"
-        android:text="Senin  \n 17"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="64dp"
-        android:layout_height="70dp"
-        android:layout_columnWeight="1"
-        android:layout_marginStart="220dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/card_background13"
-        android:gravity="center"
-        android:text="Senin  \n 17"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:layout_width="64dp"
-        android:layout_height="70dp"
-        android:layout_columnWeight="1"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="48dp"
-        android:background="@drawable/card_background13"
-        android:gravity="center"
-        android:text="Senin  \n 17"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

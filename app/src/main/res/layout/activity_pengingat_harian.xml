@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:id="@+id/main"
+    tools:context=".PengingatHarianActivity">
 
     <!-- Header View -->
     <View
@@ -17,17 +18,19 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Back Button -->
+
+    <!-- Icon Clock -->
     <ImageButton
         android:id="@+id/back_button"
         android:layout_width="49dp"
         android:layout_height="49dp"
         android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
         android:background="@drawable/back"
         android:contentDescription="Back Button"
         app:layout_constraintStart_toStartOf="@+id/header_card"
         app:layout_constraintTop_toTopOf="@+id/header_card" />
 
-    <!-- Icon Clock -->
     <ImageView
         android:id="@+id/icon_clock"
         android:layout_width="120dp"
@@ -81,8 +84,7 @@
         app:layout_constraintBottom_toTopOf="@+id/recyclerView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/current_month"
-        app:layout_constraintHorizontal_bias="0.073"
-        app:layout_constraintMarginStart="16dp" />
+        app:layout_constraintHorizontal_bias="0.073" />
 
     <!-- Current Month -->
     <TextView
