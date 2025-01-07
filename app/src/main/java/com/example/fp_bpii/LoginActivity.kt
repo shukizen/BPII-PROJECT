@@ -46,29 +46,24 @@ class LoginActivity : AppCompatActivity() {
             RetrofitClient.instance.login(user, pwd).enqueue(object : Callback<LoginResponse> {
                 override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                     Log.d("LoginActivity", "Response code: ${response.code()}")
-                    Log.d("LoginActivity", "Response isSuccessful: ${response.isSuccessful}")
                     val account = response.body()
-                    Log.d("LoginActivity", "Response body: $account")
-                    Log.d("LoginActivity", "account?.success: ${account?.success}") // Log tambahan
 
-                    if (response.isSuccessful) {
-                        if (account?.success == true) {
-                            Toast.makeText(this@LoginActivity, account.message.toString(), Toast.LENGTH_SHORT).show()
-
-                            // Simpan status login ke SharedPreferences
+                    if (response.isSuccessful && account?.success == true) {
+                        val email = account.data?.email // Ambil email dari respons
+                        if (email != null) {
                             sharedPreferencesManager.saveUser(user, true)
-
-                            val intentLogin = Intent(this@LoginActivity, HomeActivity::class.java)
-                            startActivity(intentLogin)
-                        } else {
-                            Log.d("LoginActivity", "Login failed: ${account?.message}")
-                            Toast.makeText(this@LoginActivity, account?.message ?: "Login failed", Toast.LENGTH_SHORT).show()
+                            sharedPreferencesManager.savePwd(pwd, true)
+                            sharedPreferencesManager.saveEmail(email, true) // Simpan email ke SharedPreferences
                         }
+
+                        Toast.makeText(this@LoginActivity, account.message.toString(), Toast.LENGTH_SHORT).show()
+                        val intentLogin = Intent(this@LoginActivity, HomeActivity::class.java)
+                        startActivity(intentLogin)
                     } else {
-                        Log.d("LoginActivity", "Error: ${response.code()}, Message: ${response.message()}")
-                        Toast.makeText(this@LoginActivity, "Error: ${response.code()}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@LoginActivity, account?.message ?: "Login failed", Toast.LENGTH_SHORT).show()
                     }
                 }
+
 
                 override fun onFailure(call: Call<LoginResponse>, t: Throwable) {
                     Log.e("LoginActivity", "API call failed", t)

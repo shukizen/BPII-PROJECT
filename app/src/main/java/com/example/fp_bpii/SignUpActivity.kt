@@ -17,14 +17,11 @@ import retrofit2.Response
 
 class SignUpActivity : AppCompatActivity() {
 
-    private lateinit var sharedPreferencesManager: SharedPreferencesUser
     private val TAG = "SignUpActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
-
-        sharedPreferencesManager = SharedPreferencesUser(this)
 
         val btnRegister: Button = findViewById(R.id.button7)
         val txtEmail: EditText = findViewById(R.id.editTextText3)
@@ -91,9 +88,9 @@ class SignUpActivity : AppCompatActivity() {
                             Toast.LENGTH_SHORT
                         ).show()
 
-                        sharedPreferencesManager.saveEmail(email, true)
-                        sharedPreferencesManager.saveUser(username, true)
-                        sharedPreferencesManager.savePwd(password, true)
+                        val intent = Intent(this@SignUpActivity, LoginActivity::class.java)
+                        startActivity(intent)
+
 
                     } else {
                         // Log detail error

@@ -3,6 +3,7 @@ package com.example.fp_bpii
 import FaqActivity
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -30,6 +31,7 @@ class ProfileFragment : Fragment() {
         txtWelcome.text = "$userName"
 
         val userPassword = sharedPreferencesUser.getUserPassword()
+        Log.d("ProfileFragment", "Password yang diambil: $userPassword")
         val txtpwd: TextView = view.findViewById(R.id.pwd)
         txtpwd.text = "$userPassword"
 
@@ -37,9 +39,9 @@ class ProfileFragment : Fragment() {
         val txtemail: TextView = view.findViewById(R.id.email)
         txtemail.text = "$userEmail"
 
-
         return view
 
         }
+
 }
 

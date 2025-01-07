@@ -28,8 +28,6 @@ class HomeFragment : Fragment() {
 
         // Dapatkan nama pengguna dari SharedPreferences
         val userName = sharedPreferencesUser.getUserName()
-
-        // Tampilkan nama pengguna ke TextView (contoh)
         val txtWelcome: TextView = view.findViewById(R.id.textView3)
         txtWelcome.text = "Hallo, $userName"
 

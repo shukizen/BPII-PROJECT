@@ -38,7 +38,6 @@ interface Api {
     @GET("penyakit")
     fun getPenyakit(): Call<List<Penyakit>>
 
-    @FormUrlEncoded
     @GET("profile")
     fun profile(
         @Field("email") email: String,

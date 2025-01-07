@@ -2,6 +2,7 @@ package com.example.fp_bpii
 
 import android.content.Context
 import android.content.SharedPreferences
+import android.util.Log
 
 class SharedPreferencesUser(context: Context) {
 
@@ -10,8 +11,8 @@ class SharedPreferencesUser(context: Context) {
 
     companion object {
         private const val PREF_NAME = "UserPrefs"
-        private const val PREF_PASSWORD = "UserPrefs"
-        private const val PREF_EMAIL = "UserPrefs"
+        private const val KEY_USERPASSWORD = "key_user_password"
+        private const val KEY_USER_EMAIL = "key_user_email"
         private const val KEY_USER_NAME = "key_user_name"
         private const val KEY_IS_LOGGED_IN = "key_is_logged_in"
     }
@@ -25,9 +26,10 @@ class SharedPreferencesUser(context: Context) {
         }
     }
 
-    fun savePwd(pasword: String, isLoggedIn: Boolean) {
+    fun savePwd(password: String, isLoggedIn: Boolean) {
         sharedPreferences.edit().apply {
-            putString(PREF_PASSWORD, pasword)
+            Log.d("SharedPreferencesUser", "Menyimpan password: $password")
+            putString(KEY_USERPASSWORD, password)
             putBoolean(KEY_IS_LOGGED_IN, isLoggedIn)
             apply()
         }
@@ -35,23 +37,23 @@ class SharedPreferencesUser(context: Context) {
 
     fun saveEmail(email: String, isLoggedIn: Boolean) {
         sharedPreferences.edit().apply {
-            putString(PREF_EMAIL, email)
+            Log.d("SharedPreferencesUser", "Menyimpan email: $email")
+            putString(KEY_USER_EMAIL, email)
             putBoolean(KEY_IS_LOGGED_IN, isLoggedIn)
             apply()
         }
     }
 
-    // Mendapatkan nama pengguna
     fun getUserName(): String? {
         return sharedPreferences.getString(KEY_USER_NAME, null)
     }
 
     fun getUserPassword(): String? {
-        return sharedPreferences.getString(PREF_PASSWORD, null)
+        return sharedPreferences.getString(KEY_USERPASSWORD, null)
     }
 
     fun getUserEmail(): String? {
-        return sharedPreferences.getString(PREF_EMAIL, null)
+        return sharedPreferences.getString(KEY_USER_EMAIL, null)
     }
 
 
