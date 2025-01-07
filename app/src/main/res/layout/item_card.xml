@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tips_item"
+    android:layout_margin="8dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/bg_rectangle_rounded"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+        <ImageView
+            android:id="@+id/gambarmental"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/kelolastres" />
+
+        <TextView
+            android:id="@+id/namatips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Kelola Stres"
+            android:textSize="18sp" />
+</LinearLayout>

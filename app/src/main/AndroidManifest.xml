@@ -17,46 +17,19 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".FaqActivity"
+            android:name=".PenjelasanTipsActivity"
             android:exported="false" />
         <activity
-            android:name=".TambahKegiatanActivity"
+            android:name=".PenjelasanPenyakitActivity"
             android:exported="false" />
         <activity
-            android:name=".KonsultasiActivity"
-            android:exported="false" />
-        <activity
-            android:name=".KegiatanHarianActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ScheduleActivity"
-            android:exported="false" />
-        <activity
-            android:name=".KonselingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ChatActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity_faq"
-            android:exported="false" />
-        <activity
-            android:name=".ResetPasswordActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PengingatHarianActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PopupActivity"
+            android:name=".PenyakitActivity"
             android:exported="false" />
         <activity
             android:name=".TipsActivity"
             android:exported="false" />
         <activity
             android:name=".AccountActivity"
-            android:exported="false" />
-        <activity
-            android:name=".HomeActivity2"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"
