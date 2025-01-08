@@ -4,9 +4,12 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageButton
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContentProviderCompat.requireContext
 import com.example.fp_bpii.client.RetrofitClient
 import com.example.fp_bpii.response.users.LoginResponse
 import retrofit2.Call
@@ -26,6 +29,7 @@ class LoginActivity : AppCompatActivity() {
         val txtPassword: EditText = findViewById(R.id.editTextText2)
         val btnLogin: Button = findViewById(R.id.button4)
         val btnSignup: TextView = findViewById(R.id.button3)
+        val btnreset: TextView = findViewById(R.id.forgotPassword)
 
         btnLogin.setOnClickListener {
             val user = txtUsername.text.toString().trim()
@@ -71,10 +75,20 @@ class LoginActivity : AppCompatActivity() {
                 }
             })
         }
+
+        btnreset.setOnClickListener {
+            val reset = Intent(this,ResetPasswordActivity::class.java)
+            startActivity(reset)
+        }
+
+
+
         btnSignup.setOnClickListener {
             val intentSignup = Intent(this, SignUpActivity::class.java)
             startActivity(intentSignup)
         }
+
+
 
     }
 }

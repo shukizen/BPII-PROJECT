@@ -35,7 +35,7 @@ class PenjelasanPenyakitActivity : AppCompatActivity() {
         pengobatanView.text = pengobatan
 
         if (gambarPenyakit.isNotEmpty()) {
-            val imageUrl = "http://192.168.0.108/rest_apibp2/penyakit/$gambarPenyakit"
+            val imageUrl = "http://172.25.206.48/rest_apibp2/penyakit/$gambarPenyakit"
             Picasso.get()
                 .load(imageUrl)
                 .placeholder(android.R.drawable.ic_menu_gallery)

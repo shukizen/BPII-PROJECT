@@ -28,7 +28,7 @@ class PenjelasanTipsActivity : AppCompatActivity() {
 
         // Memuat gambar menggunakan Picasso
         if (gambar.isNotEmpty()) {
-            val imageUrl = "http://192.168.0.108/rest_apibp2/gambar/$gambar"
+            val imageUrl = "http://172.25.206.48/rest_apibp2/gambar/$gambar"
             Picasso.get()
                 .load(imageUrl)
                 .placeholder(android.R.drawable.ic_menu_gallery)

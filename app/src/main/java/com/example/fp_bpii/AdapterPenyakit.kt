@@ -28,7 +28,7 @@ class AdapterPenyakit(
             // Log URL gambar untuk debugging
 
 
-            val imageUrl = "http://192.168.0.108/rest_apibp2/penyakit/${penyakit.gambar}"
+            val imageUrl = "http://172.25.206.48/rest_apibp2/penyakit/${penyakit.gambar}"
 
             Log.d("AdapterTips", "Loading image from URL: $imageUrl ")
 

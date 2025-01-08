@@ -6,9 +6,6 @@
     android:id="@+id/main"
     tools:context=".PenjelasanPenyakitActivity">
 
-
-    <!-- Back Button -->
-
     <View
         android:id="@+id/header_rectangle"
         android:layout_width="415dp"
@@ -29,7 +26,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
         android:id="@+id/logopenyakit"
         android:layout_width="188dp"
@@ -47,44 +43,93 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Jenis Penyakit"
+        android:textStyle="bold"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logopenyakit" />
 
-    <TextView
-        android:id="@+id/pengertianpenyakit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="76dp"
-        android:text="Pengertian."
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <!-- Tambahkan ScrollView untuk elemen lainnya -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/jenispenyakit"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/jenispenyakit" />
-
-    <TextView
-        android:id="@+id/gejalapenyakit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="Gejala."
-        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pengertianpenyakit" />
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <TextView
-        android:id="@+id/pengobatanpenyakit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="Pengbatan."
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gejalapenyakit" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
 
+            <!-- Judul Pengertian -->
+            <TextView
+                android:id="@+id/judul_pengertian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengertian"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pengertianpenyakit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pengertian:"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:background="@drawable/card_background8" />
+
+            <!-- Judul Gejala -->
+            <TextView
+                android:id="@+id/judul_gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Gejala"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/gejalapenyakit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Gejala:"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:background="@drawable/card_background8" />
+
+            <!-- Judul Pengobatan -->
+            <TextView
+                android:id="@+id/judul_pengobatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pengobatan"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="8dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/pengobatanpenyakit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Pengobatan:"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:background="@drawable/card_background8" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

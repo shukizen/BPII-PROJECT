@@ -27,7 +27,7 @@ class AdapterTips(
             namaTips.text = tip.nama_tips
 
             // Perbaikan URL gambar
-            val imageUrl = "http://192.168.0.108/rest_apibp2/gambar/${tip.gambar}"
+            val imageUrl = "http://172.25.206.48/rest_apibp2/gambar/${tip.gambar}"
 
             // Log URL gambar untuk debugging
             Log.d("AdapterTips", "Loading image from URL: $imageUrl ")
