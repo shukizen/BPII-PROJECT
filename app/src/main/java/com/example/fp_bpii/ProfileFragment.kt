@@ -1,6 +1,5 @@
 package com.example.fp_bpii
 
-import FaqActivity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -48,6 +47,12 @@ class ProfileFragment : Fragment() {
             requireActivity().finish()
         }
 
+
+        val btnFaq: TextView = view.findViewById(R.id.faq)
+        btnFaq.setOnClickListener {
+            val intent = Intent(requireContext(), FaqActivity::class.java)
+            startActivity(intent)
+        }
         return view
 
         }

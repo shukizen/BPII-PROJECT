@@ -6,14 +6,156 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/main"
-    tools:context=".MainActivity">
+    tools:context=".FaqActivity">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Faq"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <!-- Header FAQ -->
+
+    <!-- Pertanyaan Populer -->
+
+    <!-- FAQ Item 1 -->
+
+    <TextView
+        android:id="@+id/faq_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="FAQ"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Bantuan -->
+
+    <TextView
+        android:id="@+id/faq_greeting"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:padding="8dp"
+        android:text="Hallo Aulia, Ada yang bisa dibantu?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faq_title" />
+
+    <TextView
+        android:layout_width="393dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="16dp"
+        android:text="Punya Pertanyaan? Perlu Jawaban? Kami ada buat kamu"
+        android:textColor="#666666"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faq_greeting" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:padding="8dp"
+        android:text="Pertanyaan Populer"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faq_greeting" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/question"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/faq_item_background"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/faq_greeting">
+
+        <TextView
+            android:id="@+id/faq_answer_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Jika kamu mengalami kesulitan dalam mengungkapkan perasaan, mungkin kamu memiliki kondisi mental bernama alexithymia. Alexithymia adalah kondisi ketika seseorang kesulitan mengenali dan mengungkapkan emosi yang dirasakannya."
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/faq_answer_1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
         android:padding="16dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="90dp"
+            android:layout_height="127dp"
+            android:src="@drawable/cs"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="297dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="40dp"
+            android:paddingStart="8dp"
+            android:text="Masih ada pertanyaan yang belum terjawab? Cari jawabannya di FAQ."
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="624dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Masih butuh bantuan? Hubungi Shuki!"
+        android:textColor="#007BFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/question" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="396dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:paddingBottom="4dp"
+        android:text="Apakah kamu memiliki masalah perasaan yang tak bisa diucapkan?"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
