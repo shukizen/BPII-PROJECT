@@ -15,7 +15,7 @@
         android:layout_marginTop="56dp"
         android:text="Hallo, Aulia"
         android:textSize="18dp"
-        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,6 +28,7 @@
         android:layout_marginTop="92dp"
         android:text="Bagaimana Kabarmu Hari ini ?"
         android:textSize="16dp"
+        android:fontFamily="@font/poppins_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
@@ -149,6 +150,7 @@
         android:drawableStart="@drawable/baseline_search_24"
         android:ems="10"
         android:inputType="text"
+        android:fontFamily="@font/poppins_medium"
         android:paddingStart="10dp"
         android:hint="Cari disini"
         app:cardCornerRadius="10dp"
@@ -188,7 +190,7 @@
             android:text="Beberapa Penyakit\nKesehatan Mental"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/poppins_bold"/>
 
     </LinearLayout>
 
@@ -216,9 +218,9 @@
             android:layout_marginStart="70dp"
             android:layout_weight="1"
             android:text="Tips Kesehatan \nMental Harian"
+            android:fontFamily="@font/poppins_bold"
             android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/imageIcon1"
@@ -263,7 +265,7 @@
             android:text="Chat Bot"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/poppins_bold"/>
 
     </LinearLayout>
 
@@ -301,7 +303,7 @@
             android:text="Pengingat\nIstirahat"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/poppins_bold" />
 
     </LinearLayout>
 

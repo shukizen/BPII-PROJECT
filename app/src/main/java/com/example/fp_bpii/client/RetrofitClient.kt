@@ -6,14 +6,14 @@ import retrofit2.converter.gson.GsonConverterFactory
 object RetrofitClient {
 
     // URL API base
-    const val BASE_URL = "http://172.25.206.48/rest_apibp2/index.php/"
+    const val BASE_URL = "http://10.200.13.141/rest_apibp2/index.php/"
 
     // Instance Retrofit yang diciptakan secara lazy (hanya dibuat sekali)
     val instance: Api by lazy {
         // Membuat Retrofit dengan URL base dan converter Gson
         val retrofit = Retrofit.Builder()
             .baseUrl(BASE_URL)  // URL API base
-            .addConverterFactory(GsonConverterFactory.create())  // Konverter untuk response JSON ke model
+            .addConverterFactory(GsonConverterFactory.  create())  // Konverter untuk response JSON ke model
             .build()
 
         // Membuat instansi Api untuk memanggil API

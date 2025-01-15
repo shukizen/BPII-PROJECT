@@ -7,58 +7,66 @@
     android:layout_height="match_parent"
     android:id="@+id/main"
     android:background="@android:color/white"
-    tools:context=".MainActivity">
+    tools:context=".ChatActivity">
 
     <!-- Back Button -->
-    <ImageView
+
+    <!-- Profile Picture -->
+
+    <!-- User Name -->
+
+    <!-- Chat Messages -->
+
+    <ImageButton
         android:id="@+id/backButton"
         android:layout_width="38dp"
-        android:layout_height="31dp"
+        android:layout_height="38dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back"
         android:contentDescription="Back Button"
-        android:src="@drawable/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Profile Picture -->
     <ImageView
         android:id="@+id/profilePicture"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="56dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="44dp"
         android:contentDescription="Profile Picture"
         android:src="@drawable/boy"
-        app:layout_constraintStart_toEndOf="@id/backButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- User Name -->
     <TextView
         android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="16dp"
-        android:text="Shukii"
+        android:fontFamily="@font/poppins_bold"
+        android:text="AI"
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@id/profilePicture"
         app:layout_constraintTop_toTopOf="@id/profilePicture" />
 
-    <!-- Chat Messages -->
     <TextView
         android:id="@+id/chat1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="132dp"
         android:background="@drawable/bg_chat_black"
         android:padding="12dp"
+        android:fontFamily="@font/poppins_medium"
         android:text="Message 1"
         android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/profilePicture" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/chat2"
@@ -67,36 +75,41 @@
         android:layout_marginEnd="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_chat_green"
+        android:fontFamily="@font/poppins_medium"
         android:padding="12dp"
         android:text="Message 2"
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chat1" />
 
+    <!-- Date Separator -->
+
     <TextView
         android:id="@+id/chat3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/bg_chat_black"
+        android:fontFamily="@font/poppins_medium"
         android:padding="12dp"
         android:text="Message 3"
         android:textColor="@android:color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chat2" />
 
-    <!-- Date Separator -->
     <TextView
         android:id="@+id/dateSeparator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:text="Thursday 24, 2022"
+        android:fontFamily="@font/poppins_medium"
         android:textColor="@android:color/darker_gray"
         android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/chat3" />
 
     <TextView
@@ -109,6 +122,7 @@
         android:padding="12dp"
         android:text="Message 4"
         android:textColor="@android:color/white"
+        android:fontFamily="@font/poppins_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/dateSeparator" />
 
@@ -119,6 +133,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_chat_black"
+        android:fontFamily="@font/poppins_medium"
         android:padding="12dp"
         android:text="Message 5"
         android:textColor="@android:color/white"
@@ -126,22 +141,25 @@
         app:layout_constraintTop_toBottomOf="@id/chat4" />
 
     <!-- Input Field -->
+
+
+    <!-- Send Button -->
     <EditText
         android:id="@+id/messageInput"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="32dp"
         android:background="@drawable/bg_input"
+        android:fontFamily="@font/poppins_medium"
         android:hint="Send Message"
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/sendButton" />
+        app:layout_constraintEnd_toStartOf="@id/sendButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
-
-    <!-- Send Button -->
     <ImageView
         android:id="@+id/sendButton"
         android:layout_width="36dp"

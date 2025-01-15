@@ -22,8 +22,8 @@
     <!-- Tombol Kembali -->
     <ImageButton
         android:id="@+id/btn_back"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/back"
@@ -60,13 +60,14 @@
             android:text="Tips Kesehatan \n Mental Harian"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/poppins_bold" />
 
         <TextView
             android:id="@+id/header_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Berikut Tips yang Kami \nBerikan.."
+            android:fontFamily="@font/poppins_medium"
             android:textColor="@color/black"
             android:textSize="14sp" />
     </LinearLayout>

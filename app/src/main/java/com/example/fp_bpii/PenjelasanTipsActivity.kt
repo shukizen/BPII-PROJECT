@@ -14,7 +14,7 @@ class PenjelasanTipsActivity : AppCompatActivity() {
 
         // Mendapatkan data yang dikirimkan melalui Intent
         val namaTips = intent.getStringExtra("nama_tips") ?: "Nama Tips Tidak Ditemukan"
-        val gambar = intent.getStringExtra("gambar") ?: ""
+        val gambar = intent.getStringExtra("gambar") ?: "Gambar Tips Tidak Ditemukan"
         val penjelasan = intent.getStringExtra("penjelasan") ?: "Penjelasan Tidak Tersedia"
 
         // Menampilkan data di UI
@@ -28,7 +28,7 @@ class PenjelasanTipsActivity : AppCompatActivity() {
 
         // Memuat gambar menggunakan Picasso
         if (gambar.isNotEmpty()) {
-            val imageUrl = "http://172.25.206.48/rest_apibp2/gambar/$gambar"
+            val imageUrl = "http://10.200.13.141/rest_apibp2/gambar/$gambar"
             Picasso.get()
                 .load(imageUrl)
                 .placeholder(android.R.drawable.ic_menu_gallery)

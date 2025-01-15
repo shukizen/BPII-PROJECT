@@ -44,7 +44,7 @@
             android:text="Schedule Berhasil"
             android:textColor="@android:color/black"
             android:textSize="16sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageViewProfile1" />
 
@@ -57,7 +57,8 @@
             android:layout_marginEnd="10dp"
             android:text="Anda telah berhasil melakukan konseling terjadwal"
             android:textColor="@android:color/black"
-            android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +84,7 @@
             android:text="Nama Ahli"
             android:textColor="#000000"
             android:textSize="14sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/viewLine1" />
 
@@ -95,6 +96,7 @@
             android:text="Zubaidah Watullo M.Psi"
             android:textColor="#000000"
             android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/label_expert_name" />
 
@@ -107,7 +109,7 @@
             android:text="Tanggal Konseling"
             android:textColor="#000000"
             android:textSize="14sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/label_expert_name" />
 
@@ -119,6 +121,7 @@
             android:text="Senin, 20 Januari 2025"
             android:textColor="#000000"
             android:textSize="14sp"
+            android:fontFamily="@font/poppins_medium"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/label_date" />
 
@@ -132,7 +135,7 @@
             android:text="Jam Konseling"
             android:textColor="#000000"
             android:textSize="14sp"
-            android:textStyle="bold"
+            android:fontFamily="@font/poppins_bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/date" />
 
@@ -143,6 +146,7 @@
             android:layout_marginEnd="8dp"
             android:text="09.00-12.30"
             android:textColor="#000000"
+            android:fontFamily="@font/poppins_medium"
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/label_time" />
@@ -158,6 +162,7 @@
         android:textAllCaps="false"
         android:textColor="@android:color/white"
         android:textSize="15dp"
+        android:fontFamily="@font/poppins_bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

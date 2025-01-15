@@ -8,15 +8,15 @@
     android:background="@color/white"
     tools:context=".TambahKegiatanActivity">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/iv_back"
-        android:layout_width="35dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/back"
         android:contentDescription="Back"
-        android:src="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,14 +24,15 @@
         android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="40dp"
         android:text="Tambah Kegiatan Harian"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/iv_back" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_title5"
@@ -126,6 +127,8 @@
         android:layout_marginTop="52dp"
         android:backgroundTint="#00EFFF"
         android:text="Selesai"
+        android:textStyle="bold"
+        android:textSize="18sp"
         android:textAllCaps="false"
         android:textColor="#000"
         app:layout_constraintEnd_toEndOf="parent"

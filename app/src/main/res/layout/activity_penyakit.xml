@@ -19,8 +19,8 @@
 
     <ImageButton
         android:id="@+id/btn_back"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="44dp"
         android:background="@drawable/back"
@@ -55,7 +55,7 @@
             android:text="Beberapa Penyakit \nKesehatan Mental"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textStyle="bold" />
+            android:fontFamily="@font/poppins_bold" />
 
         <TextView
             android:id="@+id/header_subtitle"
@@ -63,6 +63,7 @@
             android:layout_height="wrap_content"
             android:text="Apa Saja sih penyakit \nkesehatan mental ?"
             android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
             android:textSize="14sp" />
     </LinearLayout>
 
@@ -82,6 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:itemCount="12"
