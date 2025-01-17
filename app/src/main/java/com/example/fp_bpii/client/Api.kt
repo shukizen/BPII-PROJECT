@@ -4,6 +4,7 @@ import com.example.fp_bpii.ResetPasswordActivity
 import com.example.fp_bpii.response.Tips
 import com.example.fp_bpii.response.users.LoginResponse
 import com.example.fp_bpii.response.users.Penyakit
+import com.example.fp_bpii.response.users.Psikiater
 import com.example.fp_bpii.response.users.RegisterResponse
 import com.example.fp_bpii.response.users.RegisterRequest
 import com.example.fp_bpii.response.users.ResetPasswordResponse
@@ -47,5 +48,8 @@ interface Api {
 
     @GET("penyakit")
     fun getPenyakit(): Call<List<Penyakit>>
+
+    @GET("psikiater")
+    fun getPsikiater(): Call<List<Psikiater>>
 
     }

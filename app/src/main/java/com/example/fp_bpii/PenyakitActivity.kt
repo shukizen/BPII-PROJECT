@@ -22,16 +22,13 @@ class PenyakitActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_penyakit)
 
-        // Tombol kembali
         val btnBack: ImageButton = findViewById(R.id.btn_back)
         btnBack.setOnClickListener { finish() }
 
-        // Inisialisasi RecyclerView
         recyclerView = findViewById(R.id.penyakit)
-        recyclerView.layoutManager = GridLayoutManager(this, 3) // 3 kolom
-        recyclerView.setHasFixedSize(true) // Opsional untuk meningkatkan performa
+        recyclerView.layoutManager = GridLayoutManager(this, 3)
+        recyclerView.setHasFixedSize(true)
 
-        // Muat data penyakit dari server
         loadPenyakitData()
     }
 

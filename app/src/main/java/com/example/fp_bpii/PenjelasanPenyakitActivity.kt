@@ -17,7 +17,7 @@ class PenjelasanPenyakitActivity : AppCompatActivity() {
         setContentView(R.layout.activity_penjelasanpenyakit)
 
         val jenisPenyakit = intent.getStringExtra("jenis_penyakit") ?: "Nama Penyakit Tidak Ditemukan"
-        val gambarPenyakit = intent.getStringExtra("gambar") ?: ""
+        val gambarPenyakit = intent.getStringExtra("gambar") ?: "Gambar Tidak Tersedia"
         val pengertian = intent.getStringExtra("pengertian") ?: "Penjelasan Tidak Tersedia"
         val gejala = intent.getStringExtra("gejala") ?: "Gejala Tidak Tersedia"
         val pengobatan = intent.getStringExtra("pengobatan") ?: "Pengobatan Tidak Tersedia"
@@ -35,7 +35,7 @@ class PenjelasanPenyakitActivity : AppCompatActivity() {
         pengobatanView.text = pengobatan
 
         if (gambarPenyakit.isNotEmpty()) {
-            val imageUrl = "http://10.200.13.141/rest_apibp2/penyakit/$gambarPenyakit"
+            val imageUrl = "http://10.200.137.42/rest_apibp2/penyakit/$gambarPenyakit"
             Picasso.get()
                 .load(imageUrl)
                 .placeholder(android.R.drawable.ic_menu_gallery)
